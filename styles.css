@@ -1,0 +1,207 @@
+body {
+  background-color: #160f30;
+  background-image: url("Images/background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 960px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.container {
+  animation: neon2 0.1s ease-in-out infinite alternate;
+  background-color: #160f30;
+  border: solid;
+  border-color: white;
+  border-radius: 10px;
+  border-style: double;
+  height: 440px;
+  margin: 50px auto 50px auto;
+  opacity: 0.75;
+  padding: 10px;
+  width: 350px;
+}
+
+.current-op {
+  animation: neon1 .1s ease-in-out infinite alternate;
+  color: white;
+  height: 40px;
+  margin: 10px;
+  width: 300px;
+}
+
+.last-op {
+  animation: neon1 .1s ease-in-out infinite alternate;
+  color: white;
+  height: 40px;
+  margin: 10px;
+  width: 300px;
+}
+
+.number-output {
+  font-size: 1rem;
+  padding: 5px;
+  text-align: left;
+}
+
+.op-label {
+  height: 20px;
+  margin: 5px;
+  width: 300px;
+}
+
+.pad {
+  margin: 10px auto 10px auto;
+}
+
+.result {
+  color: white;
+  font-size: 0.75rem;
+  height: 200px;
+  margin: 10px auto 10px auto;
+}
+
+.row {
+  margin: 2px 0 2px 0;
+}
+
+/* DIVIDE BY ZERO CLASSES */
+
+.broken-text {
+  animation: neon-red-1 .1s ease-in-out infinite alternate;
+  color: red;
+  height: 40px;
+  margin: 10px;
+  width: 300px;
+}
+
+.broken-container{
+  animation: neon-red-2 0.1s ease-in-out infinite alternate;
+  background-color: #160f30;
+  border: solid;
+  border-color: red;
+  border-radius: 10px;
+  border-style: double;
+  height: 440px;
+  margin: 50px auto 50px auto;
+  opacity: 0.75;
+  padding: 10px;
+  width: 350px;
+}
+
+/* ANIMATIONS */
+
+@keyframes neon-red-1 {
+  from {
+    text-shadow:
+      0 0 6px rgba(255, 0, 0, 0.92),
+      0 0 30px rgba(255, 0, 0, 0.34),
+      0 0 12px rgba(139, 0, 0, 0.52),
+      0 0 21px rgba(139, 0, 0, 0.92),
+      0 0 34px rgba(139, 0, 0, 0.78),
+      0 0 54px rgba(139, 0, 0, 0.92);
+  }
+
+  to {
+    text-shadow:
+      0 0 6px rgba(255, 0, 0, 0.98),
+      0 0 30px rgba(255, 0, 0, 0.42),
+      0 0 12px rgba(139, 0, 0, 0.58),
+      0 0 22px rgba(139, 0, 0, 0.84),
+      0 0 38px rgba(139, 0, 0, 0.88),
+      0 0 60px rgba(139, 0, 0, 1);
+  }
+}
+
+@keyframes neon-red-2 {
+  from {
+    box-shadow:
+      0 0 6px rgba(255, 0, 0, 0.92),
+      0 0 30px rgba(255, 0, 0, 0.34),
+      0 0 12px rgba(139, 0, 0, 0.52),
+      0 0 21px rgba(139, 0, 0, 0.92),
+      0 0 34px rgba(139, 0, 0, 0.78),
+      0 0 54px rgba(139, 0, 0, 0.92);
+  }
+
+  to {
+    box-shadow:
+      0 0 6px rgba(255, 0, 0, 0.98),
+      0 0 30px rgba(255, 0, 0, 0.42),
+      0 0 12px rgba(139, 0, 0, 0.58),
+      0 0 22px rgba(139, 0, 0, 0.84),
+      0 0 38px rgba(139, 0, 0, 0.88),
+      0 0 60px rgba(139, 0, 0, 1);
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow:
+      0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 30px rgba(202, 228, 225, 0.34),
+      0 0 12px rgba(30, 132, 242, 0.52),
+      0 0 21px rgba(30, 132, 242, 0.92),
+      0 0 34px rgba(30, 132, 242, 0.78),
+      0 0 54px rgba(30, 132, 242, 0.92);
+  }
+
+  to {
+    text-shadow:
+      0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42),
+      0 0 12px rgba(30, 132, 242, 0.58),
+      0 0 22px rgba(30, 132, 242, 0.84),
+      0 0 38px rgba(30, 132, 242, 0.88),
+      0 0 60px rgba(30, 132, 242, 1);
+  }
+}
+
+@keyframes neon2 {
+  from {
+    box-shadow:
+      0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 30px rgba(202, 228, 225, 0.34),
+      0 0 12px rgba(30, 132, 242, 0.52),
+      0 0 21px rgba(30, 132, 242, 0.92),
+      0 0 34px rgba(30, 132, 242, 0.78),
+      0 0 54px rgba(30, 132, 242, 0.92);
+  }
+
+  to {
+    box-shadow:
+      0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42),
+      0 0 12px rgba(30, 132, 242, 0.58),
+      0 0 22px rgba(30, 132, 242, 0.84),
+      0 0 38px rgba(30, 132, 242, 0.88),
+      0 0 60px rgba(30, 132, 242, 1);
+  }
+}
+
+@keyframes neon3 {
+  from {
+    color:
+      0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 30px rgba(202, 228, 225, 0.34),
+      0 0 12px rgba(30, 132, 242, 0.52),
+      0 0 21px rgba(30, 132, 242, 0.92),
+      0 0 34px rgba(30, 132, 242, 0.78),
+      0 0 54px rgba(30, 132, 242, 0.92);
+  }
+
+  to {
+    color:
+      0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42),
+      0 0 12px rgba(30, 132, 242, 0.58),
+      0 0 22px rgba(30, 132, 242, 0.84),
+      0 0 38px rgba(30, 132, 242, 0.88),
+      0 0 60px rgba(30, 132, 242, 1);
+  }
+}
